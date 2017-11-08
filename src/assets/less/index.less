@@ -1,4 +1,24 @@
 body, html {
   padding: 0;
   margin: 0;
+  background: #000;
+}
+
+input[type="range"] {
+  background-color: #272728;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  height:6px;
+  background: #fff;
+  outline: none;
+  user-select: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: default;
+  height: 20px;
+  width: 20px;
+  background: none repeat scroll 0 0 #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 1px black inset;
 }
