@@ -9,33 +9,7 @@
       </div>
     </div>
     <div class="magic-cube" :style="[rotateStyle]">
-      <cube :no="1"></cube>
-      <cube :no="2"></cube>
-      <cube :no="3"></cube>
-      <cube :no="4"></cube>
-      <cube :no="5"></cube>
-      <cube :no="6"></cube>
-      <cube :no="7"></cube>
-      <cube :no="8"></cube>
-      <cube :no="9"></cube>
-      <cube :no="10"></cube>
-      <cube :no="11"></cube>
-      <cube :no="12"></cube>
-      <cube :no="13"></cube>
-      <cube :no="14"></cube>
-      <cube :no="15"></cube>
-      <cube :no="16"></cube>
-      <cube :no="17"></cube>
-      <cube :no="18"></cube>
-      <cube :no="19"></cube>
-      <cube :no="20"></cube>
-      <cube :no="21"></cube>
-      <cube :no="22"></cube>
-      <cube :no="23"></cube>
-      <cube :no="24"></cube>
-      <cube :no="25"></cube>
-      <cube :no="26"></cube>
-      <cube :no="27"></cube>
+      <cube v-for="item in 27" :no="item" :key="item"></cube>
     </div>
   </div>
 </template>
@@ -76,6 +50,7 @@
     perspective: 5000px;
     perspective-origin: center;
     color: #fff;
+    background: #000;
   }
   .control {
     position: absolute;
